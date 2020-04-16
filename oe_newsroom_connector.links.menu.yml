@@ -1,0 +1,6 @@
+oe_newsroom_connector.admin_config:
+  route_name: oe_newsroom_connector.settings
+  parent: system.admin_config_content
+  title: 'OpenEuropa Newsroom connector'
+  weight: 10
+  description: 'OpenEuropa Newsroom connector configuration.'

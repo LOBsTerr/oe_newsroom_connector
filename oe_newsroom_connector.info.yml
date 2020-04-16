@@ -1,0 +1,13 @@
+name: 'OpenEuropa Newsroom Connector'
+description: 'OpenEuropa Newsroom connector'
+package: 'OpenEuropa Newsroom'
+
+type: module
+core: 8.x
+php: (>=7.1)
+
+dependencies:
+  - drupal:migrate_tools
+  - drupal:migrate_plus
+
+configure: /admin/content/oe-newsroom

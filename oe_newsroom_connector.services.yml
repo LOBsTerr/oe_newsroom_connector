@@ -1,0 +1,7 @@
+services:
+  oe_newsroom_connector.universe_manager:
+    arguments: ['@config.factory']
+    class: Drupal\oe_newsroom_connector\UniverseManager
+  oe_newsroom_connector.plugin.manager.newsroom_processor:
+    class: Drupal\oe_newsroom_connector\Plugin\NewsroomProcessorManager
+    parent: default_plugin_manager
