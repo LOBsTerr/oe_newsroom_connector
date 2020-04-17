@@ -1,0 +1,114 @@
+<?php
+
+use Drupal\migrate\Plugin\MigrationInterface;
+use Drupal\migrate\Plugin\MigrateSourceInterface;
+use Drupal\migrate\Row;
+use Drupal\Core\Link;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_migrate_MIGRATION_ID_prepare_row().
+ */
+function oe_newsroom_connector_item_migrate_newsroom_item_prepare_row (
+  Row $row,
+  MigrateSourceInterface $source,
+  MigrationInterface $migration
+) {
+  $data = [];
+  // Get related nodes.
+  /** @var \Drupal\migrate\Plugin\migrate\id_map\Sql $id_map */
+  $related_item_ids = $row->getSourceProperty('related_documents_title');
+  $id_map = $migration->getIdMap();
+  var_dump($id_map->lookupDestinationId([667551]));
+  exit();
+
+  // Get see also.
+  $see_also_title = $row->getSourceProperty('related_documents_title');
+  $see_also_url = $row->getSourceProperty('related_documents_url');
+  if (!empty($see_also_url)) {
+    $data[] = _oe_newsroom_connector_item_get_link_array($see_also_url, $see_also_title);
+  }
+
+  // Get see also.
+  $contact_title = $row->getSourceProperty('contact_text');
+  $contact_info = $row->getSourceProperty('contact_info');
+  if (!empty($see_also_url)) {
+    $data[] = $data[] = _oe_newsroom_connector_item_get_link_array($contact_info, $contact_title);
+  }
+
+  // Get related documents.
+  $related_documents_titles = $row->getSourceProperty('related_documents_title');
+  $related_documents_urls = $row->getSourceProperty('related_documents_url');
+
+
+  if (!empty($related_documents_urls)) {
+    if (is_array($related_documents_urls)) {
+      foreach ($related_documents_urls as $key => $item) {
+        $data[] = _oe_newsroom_connector_item_get_link_array($related_documents_urls[$key], $related_documents_titles[$key]);
+      }
+    }
+    else {
+      $data[] = _oe_newsroom_connector_item_get_link_array($related_documents_urls, $related_documents_titles);
+    }
+  }
+
+  $row->setSourceProperty('links', $data);
+}
+
+function _oe_newsroom_connector_item_get_link_array($url, $title) {
+  return [
+    'url' => $url,
+    'title' => $title,
+  ];
+}
+
+/**
+ * Implements hook_entity_extra_field_info().
+ */
+function oe_newsroom_connector_item_entity_extra_field_info() {
+  $extra = [];
+
+  $extra['node']['newsroom_item']['display']['newsroom_action_buttons'] = [
+    'label' => t('Action buttons'),
+    'description' => t('Displays buttons to edit or to reimport newsroom item.'),
+    'weight' => 100,
+    'visible' => TRUE,
+  ];
+
+  return $extra;
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_view().
+ */
+function newsroom_connector_item_node_view(
+  array &$build,
+  EntityInterface $entity,
+  EntityViewDisplayInterface $display,
+  $view_mode
+) {
+
+  if ($entity->bundle() == 'newsroom_item') {
+    // Newsroom action buttons.
+    if ($display->getComponent('newsroom_action_buttons')) {
+      $newsroom_id = $entity->field_newsroom_id->value;
+      if (!empty($newsroom_id)) {
+        $universe_manager = \Drupal::service('newsroom_connector.universe_manager');
+        $items = [
+          Link::fromTextAndUrl('Edit', $universe_manager->getItemEditUrl($newsroom_id))->toRenderable(),
+          Link::fromTextAndUrl('Import', URL::fromRoute('newsroom_connector.import', [
+            'type' => 'item',
+            'newsroom_id' => $newsroom_id,
+          ]))->toRenderable(),
+        ];
+        $build['newsroom_action_buttons'] = [
+          '#theme' => 'item_list',
+          '#items' => $items,
+        ];
+      }
+    }
+  }
+
+}
