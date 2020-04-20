@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<rss version="2.0" xmlns:infsonewsroom="https://ec.europa.eu/newsroom/full-rss.dtd">
+	<channel>
+		<title> Parent - News - dae </title>
+		<link>https://ec.europa.eu/newsroom/dae/fullrss.cfm?t=1580919913&#38;item_id=1111</link>
+		<description>Latest news</description>
+		<language>en-gb</language>
+		<copyright>European Commission</copyright>
+		<managingEditor>cnect-editor@ec.europa.eu</managingEditor>
+		<webMaster>cnect-editor@ec.europa.eu</webMaster>
+		<ttl>30</ttl>
+				
+		<item nrid="item-1111">
+			<title lang="EN">Secure 5G networks: Commission endorses EU toolbox and sets out next steps</title>
+			<infsonewsroom:FullPreTitle lang="EN"></infsonewsroom:FullPreTitle>
+			<infsonewsroom:FullQuoteBox lang="EN">Some quote</infsonewsroom:FullQuoteBox>
+			<infsonewsroom:FullLinkedObject lang="EN"></infsonewsroom:FullLinkedObject>
+			<description lang="EN">The Commission has endorsed the joint toolbox of mitigating measures agreed by EU Member States to address security risks related to the rollout of 5G, the fifth-generation of mobile networks.</description>
+				
+			<link  lang="EN">https://ec.europa.eu/digital-single-market/news-redirect/1111</link>						
+			<infsonewsroom:FullContent lang="EN">&#60;p&#62;&#60;a href=&#34;https://ec.europa.eu/commission/presscorner/detail/en/ip_20_123&#34;&#62;Full press release&#60;/a&#62;&#60;/p&#62;
+	</infsonewsroom:FullContent>
+			<infsonewsroom:BasicShortTitle lang="EN"></infsonewsroom:BasicShortTitle>
+			<infsonewsroom:BasicTeaser lang="EN">The Commission has endorsed the joint toolbox of mitigating measures agreed by EU Member States to address security risks related to the rollout of 5G, the fifth-generation of mobile networks.</infsonewsroom:BasicTeaser>
+			<infsonewsroom:BasicUrl lang="EN"></infsonewsroom:BasicUrl>		
+			<infsonewsroom:BasicRapidLink lang="EN"></infsonewsroom:BasicRapidLink>		
+			<infsonewsroom:ContextVenue lang="EN"></infsonewsroom:ContextVenue>		
+				
+			<infsonewsroom:ContextAuthor lang="EN"></infsonewsroom:ContextAuthor>
+				
+			<infsonewsroom:ContextSpeaker lang="EN"></infsonewsroom:ContextSpeaker>
+				
+			<infsonewsroom:ContextOrganiser lang="EN"></infsonewsroom:ContextOrganiser>
+			<infsonewsroom:ContextProjectName lang="EN"></infsonewsroom:ContextProjectName>
+			<infsonewsroom:ContextProjectAcronym lang="EN"></infsonewsroom:ContextProjectAcronym>
+			<infsonewsroom:ContextProjectURL lang="EN"></infsonewsroom:ContextProjectURL>
+			<infsonewsroom:ContextProjectURLDisplay lang="EN"></infsonewsroom:ContextProjectURLDisplay>
+			<infsonewsroom:ContextProjectCoordinator lang="EN"></infsonewsroom:ContextProjectCoordinator>
+			<infsonewsroom:ContextOtherLinkText lang="EN">Secure 5G networks: Questions and Answers on the EU toolbox</infsonewsroom:ContextOtherLinkText>
+			<infsonewsroom:ContextOtherLinkUrl lang="EN">https://ec.europa.eu/commission/presscorner/detail/en/qanda_20_127</infsonewsroom:ContextOtherLinkUrl>
+			<infsonewsroom:ContextContactText lang="EN"></infsonewsroom:ContextContactText>
+			<infsonewsroom:ContextContactEmail lang="EN"></infsonewsroom:ContextContactEmail>
+			<infsonewsroom:BasicRapidIP lang="EN"></infsonewsroom:BasicRapidIP>
+			<infsonewsroom:NewsLanguage lang="EN">EN</infsonewsroom:NewsLanguage>
+			<infsonewsroom:ContextRegistrationLink lang="EN"></infsonewsroom:ContextRegistrationLink>
+			<infsonewsroom:ContextRegistrationLinkText lang="EN"></infsonewsroom:ContextRegistrationLinkText>					
+			<infsonewsroom:ContextTed lang="EN"></infsonewsroom:ContextTed>
+			<infsonewsroom:ContextEurlex lang="EN"></infsonewsroom:ContextEurlex>
+			<infsonewsroom:PicTitle lang="EN">Secure 5G networks: Commission endorses EU toolbox and sets out next steps</infsonewsroom:PicTitle>
+			<infsonewsroom:PicAlt lang="EN">Graphic showing 5G </infsonewsroom:PicAlt>
+			<infsonewsroom:PicCopyright lang="EN">European Commission</infsonewsroom:PicCopyright>
+			<infsonewsroom:PicCaption lang="EN">Secure 5G Networks</infsonewsroom:PicCaption>
+			<enclosure url="https://ec.europa.eu/information_society/newsroom/image/picture/2020-7/5gcyberweb2_54669_copy_55280.jpg" length="487628" type="image/jpeg" alt="Graphic showing 5G " title="Secure 5G Networks" copyright="European Commission" fileName="5gcyberweb2_54669_copy_55280.jpg" schema="Public" /> 
+			<infsonewsroom:docMatchLanguage>0</infsonewsroom:docMatchLanguage>
+			<pubDate>Wed, 29 Jan 2020 13:04:24 GMT</pubDate>
+			<infsonewsroom:pubtoDate></infsonewsroom:pubtoDate>
+			<infsonewsroom:pubReminderDate></infsonewsroom:pubReminderDate>
+			<infsonewsroom:pubHighlight>1</infsonewsroom:pubHighlight>
+			<infsonewsroom:pubInMailingList>1</infsonewsroom:pubInMailingList>
+			<infsonewsroom:pubIsLong>1</infsonewsroom:pubIsLong>
+			<infsonewsroom:pubTeaserOnly>0</infsonewsroom:pubTeaserOnly>
+			<infsonewsroom:pubIsCentral>1</infsonewsroom:pubIsCentral>
+			<infsonewsroom:pubCreationDate>Wed, 29 Jan 2020 13:04:24 GMT</infsonewsroom:pubCreationDate>
+			<infsonewsroom:pubUpdateDate>Mon, 10 Feb 2020 17:53:16 GMT</infsonewsroom:pubUpdateDate>
+			<guid>http://ec.europa.eu/newsroom/dae/itemdetail.cfm?item_id=1111</guid>						
+			<infsonewsroom:BasicId>1111</infsonewsroom:BasicId>
+			<infsonewsroom:BasicDate>Wed, 29 Jan 2020 13:04:24 GMT</infsonewsroom:BasicDate>
+			<infsonewsroom:BasicReferenceDate>Wed, 29 Jan 2020 13:04:24 GMT</infsonewsroom:BasicReferenceDate>
+			<infsonewsroom:BasictoDate></infsonewsroom:BasictoDate>
+			<infsonewsroom:BasicRapidPressRelease>1</infsonewsroom:BasicRapidPressRelease>
+			<infsonewsroom:ContextWellknowntext></infsonewsroom:ContextWellknowntext>
+			<infsonewsroom:ContextECContent>1</infsonewsroom:ContextECContent>
+									
+				<category domain="Subchapter" infsonewsroom:TopicId="541" infsonewsroom:parentTopicId="431" infsonewsroom:TopicHighlight="0" infsonewsroom:TopicPrimary="1" subject="http://data.europa.eu/uxp/1451">5G</category>
+		</item>
+	</channel>
+</rss> 
