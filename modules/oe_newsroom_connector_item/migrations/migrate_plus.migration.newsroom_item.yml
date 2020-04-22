@@ -63,6 +63,10 @@ source:
       label: 'Topics'
       selector: 'category[@domain!="Newsletter"]/@infsonewsroom:TopicId'
     -
+      name: subjects
+      label: 'Subjects'
+      selector: 'category[@domain!="Newsletter"]/@subject'
+    -
       name: related_content
       label: 'Related content'
       selector: 'infsonewsroom:slave/@id'
@@ -102,7 +106,7 @@ process:
     plugin: get
     source: title
 
-  'field_newsroom_body/value':
+  body:
     plugin: get
     source: full_text
 
@@ -125,13 +129,13 @@ process:
       title: 'title'
       uri: 'url'
 
-  'oe_content_legacy_link/url':
-    plugin: get
-    source: main_link
+  'oe_content_legacy_link/uri': main_link
 
-  'oe_subject/target_id':
-    plugin: get
-    source: subject
+  oe_subject:
+    plugin: iterator
+    source: subjects
+    process:
+      target_id: 'subject'
 
 destination:
   plugin: entity:node

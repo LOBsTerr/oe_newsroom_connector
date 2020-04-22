@@ -9,9 +9,9 @@ use Drupal\oe_newsroom_connector\Plugin\NewsroomProcessorBase;
  *
  * @NewsroomProcessor (
  *   id = "oe_newsroom_item",
+ *   migration_id = "newsroom_item",
  *   content_type = "node",
  *   bundle = "newsroom_item",
- *   bundle_field = "type",
  *   import_script = "fullrss-multilingual.cfm",
  *   import_segment = "item_id",
  *   label = @Translation("Newsroom item"),

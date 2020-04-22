@@ -93,16 +93,27 @@ abstract class NewsroomProcessorBase extends PluginBase implements NewsroomProce
     }
   }
 
-
+  /**
+   * Gets entity by original id.
+   *
+   * @param int $newsroom_id
+   *    Newsroom original id.
+   *
+   * @return \Drupal\Core\Entity\EntityInterface|mixed|null
+   *   Enitity.
+   *
+   * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
+   * @throws \Drupal\Component\Plugin\Exception\PluginException
+   * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
+   */
   private function getEntityByNewsroomId($newsroom_id) {
-    $entity = NULL;
     $definition = $this->getPluginDefinition();
+    $migration = $this->migrationPluginManager->createInstance($definition['migration_id']);
+    $entity_id = reset($migration->getIdMap()->lookupDestinationId([$newsroom_id]));
+    $entity = NULL;
     $items = $this->entityTypeManager
       ->getStorage($definition['content_type'])
-      ->loadByProperties([
-        'field_newsroom_id' => $newsroom_id,
-        $definition['bundle_field'] => $definition['bundle'],
-      ]);
+      ->loadMultiple([$entity_id]);
 
     if ($item = reset($items)) {
       $entity = $item;
@@ -122,7 +133,7 @@ abstract class NewsroomProcessorBase extends PluginBase implements NewsroomProce
     }
 
     // @TODO move it to a separate class.
-    if ($this->getPluginId() == 'newsroom_item') {
+    if ($this->getPluginId() == 'oe_newsroom_item') {
       $config = $this->universeManager->getConfig();
       if ($config->get('subsite')) {
         $params['subsite'] = $config->get('subsite');

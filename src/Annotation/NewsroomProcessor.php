@@ -46,11 +46,11 @@ class NewsroomProcessor extends Plugin {
   public $bundle;
 
   /**
-   * The bundle field.
+   * The migration id.
    *
    * @var string
    */
-  public $bundle_field;
+  public $migration_id;
 
   /**
    * The import script.

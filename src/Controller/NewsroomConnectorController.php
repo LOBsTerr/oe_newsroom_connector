@@ -81,7 +81,7 @@ class NewsroomConnectorController extends ControllerBase {
    * Old redirection.
    */
   public function newsRedirect($newsroom_id) {
-    $this->redirect('item', $newsroom_id);
+    $this->redirectItem('item', $newsroom_id);
   }
 
   /**
@@ -94,7 +94,7 @@ class NewsroomConnectorController extends ControllerBase {
    * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
    */
   public function redirectItem($type, $newsroom_id) {
-    $plugin_id = "newsroom_$type";
+    $plugin_id = "oe_newsroom_$type";
     $plugin = $this->newsroomProcessorPluginManager->createInstance($plugin_id);
     if ($plugin) {
       $plugin->redirect($newsroom_id);

@@ -26,12 +26,12 @@ function oe_newsroom_connector_item_migrate_newsroom_item_prepare_row (
   $related_content_ids[] = $row->getSourceProperty('related_content');
 
   $related_content_ids = array_filter($related_content_ids);
-  var_dump($related_content_ids);
+
   foreach ($related_content_ids as $id) {
-    $nid = _oe_newsroom_connector_item_get_destination_id($id);
+    $nid = _oe_newsroom_connector_item_get_destination_id($migration, $id);
     $node = Node::load($nid);
     if (!empty($node)) {
-      $data[] = _oe_newsroom_connector_item_get_link_array($node->toUrl()->toString(), $node->label());
+      $data[] = _oe_newsroom_connector_item_get_link_array("entity:node/{$node->id()}", $node->label());
     }
   }
 
@@ -63,7 +63,7 @@ function oe_newsroom_connector_item_migrate_newsroom_item_prepare_row (
       $data[] = _oe_newsroom_connector_item_get_link_array($related_documents_urls, $related_documents_titles);
     }
   }
-  var_dump($data);
+
   $row->setSourceProperty('links', $data);
 
   // Full content.
@@ -72,13 +72,50 @@ function oe_newsroom_connector_item_migrate_newsroom_item_prepare_row (
   $full_text .= $row->getSourceProperty('linked_object');
 
   $row->setSourceProperty('full_text', $full_text);
-  var_dump($full_text);
+
+  $subjects = $row->getSourceProperty('subjects');
+  $subject_data = [];
+  if (!empty($subjects)) {
+    if (is_array($subjects)) {
+      foreach ($subjects as $subject) {
+        $subject_data[] = ['subject' => $subject];
+      }
+    }
+    else {
+      $subject_data[] = ['subject' => $subjects];
+    }
+  }
+
+  $row->setSourceProperty('subjects', $subject_data);
 }
 
-function _oe_newsroom_connector_item_get_destination_id($migration, $source_id) {
+/**
+ * Gets destination Id.
+ *
+ * @param \Drupal\migrate\Plugin\MigrationInterface $migration
+ *   Migration.
+ * @param string $source_id
+ *   Source Id.
+ *
+ * @return mixed
+ *   Destination Id.
+ */
+function _oe_newsroom_connector_item_get_destination_id(MigrationInterface $migration, $source_id) {
   return reset($migration->getIdMap()->lookupDestinationId([$source_id]));
 }
 
+/**
+ * Gets link array.
+ *
+ * @param string $url
+ *   URL.
+ *
+ * @param string $title
+ *   Title.
+ *
+ * @return array
+ *   Link array.
+ */
 function _oe_newsroom_connector_item_get_link_array($url, $title) {
   return [
     'url' => $url,
