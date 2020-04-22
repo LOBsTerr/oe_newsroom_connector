@@ -72,14 +72,17 @@
 			<infsonewsroom:BasicRapidPressRelease>1</infsonewsroom:BasicRapidPressRelease>
 			<infsonewsroom:ContextWellknowntext></infsonewsroom:ContextWellknowntext>
 			<infsonewsroom:ContextECContent>1</infsonewsroom:ContextECContent>
-									
-				<category domain="Subchapter" infsonewsroom:TopicId="541" infsonewsroom:parentTopicId="431" infsonewsroom:TopicHighlight="0" infsonewsroom:TopicPrimary="1" subject="http://data.europa.eu/uxp/1451">5G</category>
-										
-				<category domain="Subchapter" infsonewsroom:TopicId="431" infsonewsroom:parentTopicId="0" infsonewsroom:TopicHighlight="0" infsonewsroom:TopicPrimary="0" subject="http://data.europa.eu/uxp/2495">Investing in network and technologies</category>
-										
-				<category domain="Newsletter" infsonewsroom:TopicId="1523" infsonewsroom:parentTopicId="1522" infsonewsroom:TopicHighlight="0" infsonewsroom:TopicPrimary="0" subject="http://data.europa.eu/uxp/1014">CNU Press releases</category>
-										
-				<category domain="Newsletter" infsonewsroom:TopicId="3201" infsonewsroom:parentTopicId="3200" infsonewsroom:TopicHighlight="0" infsonewsroom:TopicPrimary="0" subject="http://data.europa.eu/uxp/128">In focus</category>
+
+			<infsonewsroom:master id="2222">2222</infsonewsroom:master>
+			<infsonewsroom:salve id="1111">1111</infsonewsroom:salve>
+
+			<category domain="Subchapter" infsonewsroom:TopicId="541" infsonewsroom:parentTopicId="431" infsonewsroom:TopicHighlight="0" infsonewsroom:TopicPrimary="1" subject="http://data.europa.eu/uxp/1451">5G</category>
+
+			<category domain="Subchapter" infsonewsroom:TopicId="431" infsonewsroom:parentTopicId="0" infsonewsroom:TopicHighlight="0" infsonewsroom:TopicPrimary="0" subject="http://data.europa.eu/uxp/2495">Investing in network and technologies</category>
+
+			<category domain="Newsletter" infsonewsroom:TopicId="1523" infsonewsroom:parentTopicId="1522" infsonewsroom:TopicHighlight="0" infsonewsroom:TopicPrimary="0" subject="http://data.europa.eu/uxp/1014">CNU Press releases</category>
+
+			<category domain="Newsletter" infsonewsroom:TopicId="3201" infsonewsroom:parentTopicId="3200" infsonewsroom:TopicHighlight="0" infsonewsroom:TopicPrimary="0" subject="http://data.europa.eu/uxp/128">In focus</category>
 			<infsonewsroom:NewsType id="882" parentId="0">Press release</infsonewsroom:NewsType>
 		</item>
 	</channel>

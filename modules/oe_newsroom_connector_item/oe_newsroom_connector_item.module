@@ -23,7 +23,8 @@ function oe_newsroom_connector_item_migrate_newsroom_item_prepare_row (
   // Get related nodes.
   $parent_content_ids = $row->getSourceProperty('parent_content');
   $child_content_ids = $row->getSourceProperty('related_content');
-
+  var_dump($parent_content_ids);
+  var_dump($child_content_ids);
   $related_content_ids = array_merge($parent_content_ids, $child_content_ids);
   foreach ($related_content_ids as $id) {
     $nid = _oe_newsroom_connector_item_get_destination_id($id);
@@ -61,7 +62,7 @@ function oe_newsroom_connector_item_migrate_newsroom_item_prepare_row (
       $data[] = _oe_newsroom_connector_item_get_link_array($related_documents_urls, $related_documents_titles);
     }
   }
-
+  var_dump($data);
   $row->setSourceProperty('links', $data);
 
   // Full content.
@@ -70,6 +71,7 @@ function oe_newsroom_connector_item_migrate_newsroom_item_prepare_row (
   $full_text .= $row->getSourceProperty('linked_object');
 
   $row->setSourceProperty('full_text', $full_text);
+  var_dump($full_text);
 }
 
 function _oe_newsroom_connector_item_get_destination_id($migration, $source_id) {
