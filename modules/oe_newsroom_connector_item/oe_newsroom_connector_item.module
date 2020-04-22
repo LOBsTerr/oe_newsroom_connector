@@ -21,11 +21,12 @@ function oe_newsroom_connector_item_migrate_newsroom_item_prepare_row (
   $data = [];
 
   // Get related nodes.
-  $parent_content_ids = $row->getSourceProperty('parent_content');
-  $child_content_ids = $row->getSourceProperty('related_content');
-  var_dump($parent_content_ids);
-  var_dump($child_content_ids);
-  $related_content_ids = array_merge($parent_content_ids, $child_content_ids);
+  $related_content_ids = [];
+  $related_content_ids[] = $row->getSourceProperty('parent_content');
+  $related_content_ids[] = $row->getSourceProperty('related_content');
+
+  $related_content_ids = array_filter($related_content_ids);
+  var_dump($related_content_ids);
   foreach ($related_content_ids as $id) {
     $nid = _oe_newsroom_connector_item_get_destination_id($id);
     $node = Node::load($nid);

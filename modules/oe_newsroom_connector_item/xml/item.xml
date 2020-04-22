@@ -73,8 +73,8 @@
 			<infsonewsroom:ContextWellknowntext></infsonewsroom:ContextWellknowntext>
 			<infsonewsroom:ContextECContent>1</infsonewsroom:ContextECContent>
 
-			<infsonewsroom:master id="2222">2222</infsonewsroom:master>
-			<infsonewsroom:salve id="1111">1111</infsonewsroom:salve>
+			<infsonewsroom:master id="1111">1111</infsonewsroom:master>
+			<infsonewsroom:slave id="2222">2222</infsonewsroom:slave>
 
 			<category domain="Subchapter" infsonewsroom:TopicId="541" infsonewsroom:parentTopicId="431" infsonewsroom:TopicHighlight="0" infsonewsroom:TopicPrimary="1" subject="http://data.europa.eu/uxp/1451">5G</category>
 
