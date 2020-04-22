@@ -22,7 +22,7 @@
 	</infsonewsroom:FullContent>
 			<infsonewsroom:BasicShortTitle lang="EN"></infsonewsroom:BasicShortTitle>
 			<infsonewsroom:BasicTeaser lang="EN">The Commission has endorsed the joint toolbox of mitigating measures agreed by EU Member States to address security risks related to the rollout of 5G, the fifth-generation of mobile networks.</infsonewsroom:BasicTeaser>
-			<infsonewsroom:BasicUrl lang="EN"></infsonewsroom:BasicUrl>		
+			<infsonewsroom:BasicUrl lang="EN">https://ec.europa.eu/</infsonewsroom:BasicUrl>
 			<infsonewsroom:BasicRapidLink lang="EN"></infsonewsroom:BasicRapidLink>		
 			<infsonewsroom:ContextVenue lang="EN"></infsonewsroom:ContextVenue>		
 				
@@ -38,8 +38,8 @@
 			<infsonewsroom:ContextProjectCoordinator lang="EN"></infsonewsroom:ContextProjectCoordinator>
 			<infsonewsroom:ContextOtherLinkText lang="EN">Secure 5G networks: Questions and Answers on the EU toolbox</infsonewsroom:ContextOtherLinkText>
 			<infsonewsroom:ContextOtherLinkUrl lang="EN">https://ec.europa.eu/commission/presscorner/detail/en/qanda_20_127</infsonewsroom:ContextOtherLinkUrl>
-			<infsonewsroom:ContextContactText lang="EN"></infsonewsroom:ContextContactText>
-			<infsonewsroom:ContextContactEmail lang="EN"></infsonewsroom:ContextContactEmail>
+			<infsonewsroom:ContextContactText lang="EN">Contact text</infsonewsroom:ContextContactText>
+			<infsonewsroom:ContextContactEmail lang="EN">mailto:test@test.com</infsonewsroom:ContextContactEmail>
 			<infsonewsroom:BasicRapidIP lang="EN"></infsonewsroom:BasicRapidIP>
 			<infsonewsroom:NewsLanguage lang="EN">EN</infsonewsroom:NewsLanguage>
 			<infsonewsroom:ContextRegistrationLink lang="EN"></infsonewsroom:ContextRegistrationLink>
@@ -50,7 +50,9 @@
 			<infsonewsroom:PicAlt lang="EN">Graphic showing 5G </infsonewsroom:PicAlt>
 			<infsonewsroom:PicCopyright lang="EN">European Commission</infsonewsroom:PicCopyright>
 			<infsonewsroom:PicCaption lang="EN">Secure 5G Networks</infsonewsroom:PicCaption>
-			<enclosure url="https://ec.europa.eu/information_society/newsroom/image/picture/2020-7/5gcyberweb2_54669_copy_55280.jpg" length="487628" type="image/jpeg" alt="Graphic showing 5G " title="Secure 5G Networks" copyright="European Commission" fileName="5gcyberweb2_54669_copy_55280.jpg" schema="Public" /> 
+			<enclosure url="https://ec.europa.eu/information_society/newsroom/image/picture/2020-7/5gcyberweb2_54669_copy_55280.jpg" length="487628" type="image/jpeg" alt="Graphic showing 5G " title="Secure 5G Networks" copyright="European Commission" fileName="5gcyberweb2_54669_copy_55280.jpg" schema="Public" />
+			<enclosure url="http://ec.europa.eu/newsroom/scic/document.cfm?doc_id=45316" extension="pdf" title="Safety and security week - synopsis.pdf" length="263365" type="application/pdf" external_id="" external_app="" />
+			<enclosure url="http://ec.europa.eu/newsroom/scic/document.cfm?doc_id=45317" extension="pdf" title="1 Safety and security week - synopsis.pdf" length="263365" type="application/pdf" external_id="" external_app="" />
 			<infsonewsroom:docMatchLanguage>0</infsonewsroom:docMatchLanguage>
 			<pubDate>Wed, 29 Jan 2020 13:04:24 GMT</pubDate>
 			<infsonewsroom:pubtoDate></infsonewsroom:pubtoDate>

@@ -11,7 +11,7 @@
 		<ttl>30</ttl>
 				
 		<item nrid="item-1111">
-			<title lang="EN">Secure 5G networks: Commission endorses EU toolbox and sets out next steps</title>
+			<title lang="EN">Parent - Secure 5G networks: Commission endorses EU toolbox and sets out next steps</title>
 			<infsonewsroom:FullPreTitle lang="EN"></infsonewsroom:FullPreTitle>
 			<infsonewsroom:FullQuoteBox lang="EN">Some quote</infsonewsroom:FullQuoteBox>
 			<infsonewsroom:FullLinkedObject lang="EN"></infsonewsroom:FullLinkedObject>
@@ -24,12 +24,9 @@
 			<infsonewsroom:BasicTeaser lang="EN">The Commission has endorsed the joint toolbox of mitigating measures agreed by EU Member States to address security risks related to the rollout of 5G, the fifth-generation of mobile networks.</infsonewsroom:BasicTeaser>
 			<infsonewsroom:BasicUrl lang="EN"></infsonewsroom:BasicUrl>		
 			<infsonewsroom:BasicRapidLink lang="EN"></infsonewsroom:BasicRapidLink>		
-			<infsonewsroom:ContextVenue lang="EN"></infsonewsroom:ContextVenue>		
-				
+			<infsonewsroom:ContextVenue lang="EN"></infsonewsroom:ContextVenue>
 			<infsonewsroom:ContextAuthor lang="EN"></infsonewsroom:ContextAuthor>
-				
 			<infsonewsroom:ContextSpeaker lang="EN"></infsonewsroom:ContextSpeaker>
-				
 			<infsonewsroom:ContextOrganiser lang="EN"></infsonewsroom:ContextOrganiser>
 			<infsonewsroom:ContextProjectName lang="EN"></infsonewsroom:ContextProjectName>
 			<infsonewsroom:ContextProjectAcronym lang="EN"></infsonewsroom:ContextProjectAcronym>
@@ -71,7 +68,7 @@
 			<infsonewsroom:ContextWellknowntext></infsonewsroom:ContextWellknowntext>
 			<infsonewsroom:ContextECContent>1</infsonewsroom:ContextECContent>
 									
-				<category domain="Subchapter" infsonewsroom:TopicId="541" infsonewsroom:parentTopicId="431" infsonewsroom:TopicHighlight="0" infsonewsroom:TopicPrimary="1" subject="http://data.europa.eu/uxp/1451">5G</category>
+			<category domain="Subchapter" infsonewsroom:TopicId="541" infsonewsroom:parentTopicId="431" infsonewsroom:TopicHighlight="0" infsonewsroom:TopicPrimary="1" subject="http://data.europa.eu/uxp/1451">5G</category>
 		</item>
 	</channel>
 </rss> 
