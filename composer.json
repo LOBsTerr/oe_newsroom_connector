@@ -1,0 +1,27 @@
+{
+  "name": "lobsterr/oe_newsroom_connector",
+  "type": "drupal-module",
+  "description": "Open Europa newsroom connector.",
+  "homepage": "https://github.com/LOBsTerr/oe_newsroom_connector",
+  "authors": [
+    {
+      "name": "Nikolay Lobachev",
+      "homepage": "https://www.drupal.org/u/lobsterr",
+      "role": "Maintainer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/LOBsTerr/oe_newsroom_connector/issues",
+    "source": "https://github.com/LOBsTerr/oe_newsroom_connector"
+  },
+  "license": "GPL-2.0-or-later",
+  "minimum-stability": "dev",
+  "require": {
+    "drupal/core": "^8.8 || ^9",
+    "drupal/migrate_plus": "^5.1",
+    "drupal/migrate_tools": "^5.0",
+  },
+  "require-dev": {
+    "drupal/grequest": "^1.0.0"
+  }
+}
